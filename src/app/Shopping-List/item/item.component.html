@@ -1,0 +1,38 @@
+<mat-card>
+  <mat-card-content>
+    <form>
+      <mat-grid-list cols="8" rowHeight="6rem">
+        <mat-grid-tile colspan="3">
+          <mat-form-field
+            appearance="outline"
+            floatLabel="always"
+            id="nameInputField"
+          >
+            <mat-label>Name</mat-label>
+            <input matInput type="text" />
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field appearance="outline" floatLabel="always">
+            <mat-label>Amount</mat-label>
+            <input matInput type="text" />
+          </mat-form-field>
+        </mat-grid-tile>
+      </mat-grid-list>
+      <mat-grid-list cols="12" rowHeight="3rem">
+        <mat-grid-tile>
+          <button mat-raised-button color="primary" type="button">Add</button>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <button mat-raised-button color="warn" type="button">Delete</button>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <button mat-raised-button color="primary" type="button">Clear</button>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </form>
+    <div style="padding: 2rem;">
+      <app-item-list> </app-item-list>
+    </div>
+  </mat-card-content>
+</mat-card>
