@@ -6,7 +6,8 @@ import { ItemComponent } from './Shopping-List/item/item.component';
 import { ItemListComponent } from './Shopping-List/item-list/item-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
-
+import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,9 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    Material
+    Material,
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

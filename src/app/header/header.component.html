@@ -1,12 +1,31 @@
-<!-- <div >
-    <mat-tab-group [selectedIndex]="1">
-        <mat-tab label="Receipes"></mat-tab>
-        <mat-tab label="Shopping-List" >
-            <app-item></app-item>
-        </mat-tab>
-      </mat-tab-group>
-     
+<header>
+  <div id="header">
+    <div style="padding: 0.8rem">
+      <b>The Receipe App</b>
+    </div>
+
+    <div>
+      <ul id="headerList">
+        <li
+          (click)="onClickReceipe()"
+          [ngClass]="{ selectedLi: selected.receipe == true }"
+        >
+          Receipe
+        </li>
+        <li
+          (click)="onClickShoppingList()"
+          [ngClass]="{ selectedLi: selected.shopping == true }"
+        >
+          Shopping-List
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<body class="component">
+  <router-outlet></router-outlet>
+</body>
+
+<!-- <div class="component">
+  <app-item></app-item>
 </div> -->
-<div class="component">
-    <app-item ></app-item>
-</div>

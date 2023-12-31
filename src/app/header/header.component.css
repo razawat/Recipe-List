@@ -1,8 +1,35 @@
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+#header {
+  display: flex;
+  flex-direction: row;
+  background-color: #3f51b5;
+  box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  color: white;
+}
+#headerList {
+  display: flex;
+  flex-direction: row;
+  width: 25vw;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  padding: 0.2rem 1rem;
+}
+li:hover {
+  cursor: pointer;
+  background-color: #b56a3f !important;
 }
 .component {
-    padding: 1rem 1.5rem 1rem 1.5rem;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+.selectedLi {
+    background-color: rgb(50, 98, 16) !important;
+    font-weight: bold;
 }
