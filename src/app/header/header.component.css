@@ -1,3 +1,59 @@
+ /*--------------------- Start - Header CSS ---------------------------*/
+header {
+    width: 100%;
+    background-color: #3f51b5;
+    color: wheat;
+    box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+}
+#headerLogoDiv {
+    padding: 0.4rem 2rem;
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+}
+#headerImg {
+    height:2rem;
+}
+#headerDiv, #listOfMenu {
+    display: flex;
+    flex-direction: row;
+}
+#listOfMenu {
+    list-style-type: none;
+    width: 50vw;
+}
+#listOfMenu li {
+    padding: 0.2rem 2rem;
+}
+#listOfMenu li:hover {
+    cursor: pointer;
+    background-color: #b56a3f !important;
+    /* text-decoration: underline; */
+  }
+.selectedLi {
+    background-color: rgb(50, 98, 16) !important;
+    font-weight: bold;
+}
+ /*--------------------- End - Header CSS ---------------------------*/
+
+ /*--------------------- Start - Body CSS ---------------------------*/
+#headerBodyDiv {
+    position: absolute;
+    top: 3.8rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    width: 99%;
+}
+/*--------------------- End - Body CSS ---------------------------*/
+/* header {
+    width: 3rem;
+}
 #header {
   display: flex;
   flex-direction: row;
@@ -9,15 +65,15 @@
   right: 0;
   z-index: 2;
   color: white;
+  height: 3rem;
+  margin-bottom: 3rem;
 }
 #headerList {
   display: flex;
   flex-direction: row;
   width: 25vw;
 }
-ul {
-  list-style-type: none;
-}
+
 li {
   padding: 0.2rem 1rem;
 }
@@ -26,10 +82,9 @@ li:hover {
   background-color: #b56a3f !important;
 }
 .component {
-  padding: 1rem;
-  margin-top: 3rem;
+  padding: 0 1rem;
 }
 .selectedLi {
     background-color: rgb(50, 98, 16) !important;
     font-weight: bold;
-}
+} */

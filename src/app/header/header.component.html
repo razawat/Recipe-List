@@ -1,11 +1,18 @@
-<header>
-  <div id="header">
-    <div style="padding: 0.8rem">
-      <b>The Receipe App</b>
+<header >
+  <div id="headerDiv">
+    <div id="headerLogoDiv">
+        <div>
+            <img id='headerImg' src="../../assets/angular-white-transparent.svg" alt="Header">
+        </div>
+        <div>
+            <b style="margin-top: -0.5rem;">The Receipe App</b>
+        </div>
+       
+     
     </div>
 
     <div>
-      <ul id="headerList">
+      <ul id="listOfMenu">
         <li
           (click)="onClickReceipe()"
           [ngClass]="{ selectedLi: selected.receipe == true }"
@@ -22,9 +29,9 @@
     </div>
   </div>
 </header>
-<body class="component">
+<main id="headerBodyDiv">
   <router-outlet></router-outlet>
-</body>
+</main>
 
 <!-- <div class="component">
   <app-item></app-item>
