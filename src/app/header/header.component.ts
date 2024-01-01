@@ -15,6 +15,7 @@ export class HeaderComponent {
   onClickReceipe() {
     this.selected.receipe = true;
     this.selected.shopping = false;
+    this.router.navigate(['/Receipe-list'])
   }
   onClickShoppingList() {
     this.selected.receipe = false;

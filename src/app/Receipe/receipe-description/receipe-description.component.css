@@ -1,0 +1,13 @@
+#receipeList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 5rem;
+    max-width: 60rem;
+    width: 25vw;
+    border: 1px solid black;
+}
+#imgDiv {
+    height: 4rem;
+    /* display: block; */
+}
