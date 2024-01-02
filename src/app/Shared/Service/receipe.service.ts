@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Receipe } from '../Model/receipe';
+import { Receipe } from '../Model/commonModel';
 
 @Injectable({
   providedIn: 'root',

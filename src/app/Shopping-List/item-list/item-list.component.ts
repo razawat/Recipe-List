@@ -12,6 +12,7 @@ import {
 } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { newListValue } from '../item/item.component';
+import { ShoppingListService } from 'src/app/Shared/Service/shopping-list.service';
 
 // interface tableModel {
 //   position:number,
@@ -37,10 +38,14 @@ export class ItemListComponent
   @Input() newData: any;
   dataSource = new MatTableDataSource<newListValue>([]);
   displayedColumns = ['position', 'name', 'amount'];
-  constructor() {}
+  constructor(private shoppingListService: ShoppingListService) {}
 
   ngOnInit(): void {
     console.log('On In It Item list: ', this.newData);
+    // this.setTableData(this.shoppingListService.getShoppingList());
+    this.dataSource = new MatTableDataSource<newListValue>(
+      this.shoppingListService.getShoppingList()
+    );
   }
   ngAfterViewInit(): void {
     // console.log('After view init: ', this.newData);

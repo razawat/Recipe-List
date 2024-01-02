@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Receipe } from 'src/app/Shared/Model/receipe';
+import { Receipe } from 'src/app/Shared/Model/commonModel';
 import { ReceipeService } from 'src/app/Shared/Service/receipe.service';
 
 @Component({

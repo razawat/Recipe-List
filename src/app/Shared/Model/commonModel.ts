@@ -3,3 +3,8 @@ export interface Receipe {
     description:string;
     img:string;
 }
+
+export interface ShoppingList {
+    name:string;
+    amount:number;
+}
