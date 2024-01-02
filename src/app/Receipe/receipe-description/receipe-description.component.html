@@ -1,9 +1,20 @@
-<div id="receipeList">
-    <div>
-        <p><b>Test Header</b></p>
-        <p><i>Test Description</i></p>
+<div id="receipe">
+    <div id="receipeList" (click)="onClickReceipeList()">
+        <div>
+            <p><b>Test Header</b></p>
+            <p><i>Test Description</i></p>
+        </div>
+        <div >
+            <img id="imgDiv" src="../../../assets/w0714a16207251033667-thumb.jpg" alt="receipe">
+        </div>
     </div>
-    <div >
-        <img id="imgDiv" src="../../../assets/w0714a16207251033667-thumb.jpg" alt="receipe">
+    <div id="receipeDescription" *ngIf="hideShow.showDescription">
+        <div id="descriptionImg">
+            <img src="../../../assets/w0714a16207251033667-thumb.jpg" alt="receipe">
+        </div>
+        <div id="descriptionDetails">
+            <p>Test Header</p>
+            <p>Test Description</p>
+        </div>
     </div>
 </div>

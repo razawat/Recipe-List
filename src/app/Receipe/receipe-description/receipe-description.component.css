@@ -1,3 +1,9 @@
+#receipe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70vw;
+}
 #receipeList {
     display: flex;
     flex-direction: row;
@@ -6,6 +12,9 @@
     max-width: 60rem;
     width: 25vw;
     border: 1px solid black;
+}
+#receipeList:hover {
+    cursor: pointer;
 }
 #imgDiv {
     height: 4rem;

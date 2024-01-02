@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./receipe-description.component.css']
 })
 export class ReceipeDescriptionComponent {
-
+  hideShow = {
+    showDescription:false,
+  }
+  onClickReceipeList() {  
+    this.hideShow.showDescription = true;
+  }
 }
