@@ -2,7 +2,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 70vw;
+    width: 75vw;
+}
+#receipeListDiv {
+    display: flex;
+    flex-direction: column;
 }
 #receipeList {
     display: flex;
@@ -19,4 +23,8 @@
 #imgDiv {
     height: 4rem;
     /* display: block; */
+}
+#descriptionImg {
+    max-height: 25rem;
+    max-width: 30rem;
 }

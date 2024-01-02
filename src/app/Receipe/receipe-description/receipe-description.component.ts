@@ -1,15 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Receipe } from 'src/app/Shared/Model/receipe';
+import { ReceipeService } from 'src/app/Shared/Service/receipe.service';
 
 @Component({
   selector: 'app-receipe-description',
   templateUrl: './receipe-description.component.html',
-  styleUrls: ['./receipe-description.component.css']
+  styleUrls: ['./receipe-description.component.css'],
 })
-export class ReceipeDescriptionComponent {
-  hideShow = {
-    showDescription:false,
+export class ReceipeDescriptionComponent implements OnInit {
+  receipeListData: Receipe[] = new Array<Receipe>();
+  descriptionData!: Receipe;
+  constructor(private receipeService: ReceipeService) {}
+  ngOnInit(): void {
+    this.receipeListData = this.receipeService.getReceipeData();
   }
-  onClickReceipeList() {  
+
+  hideShow = {
+    showDescription: false,
+  };
+  onClickReceipeList(index: number) {
     this.hideShow.showDescription = true;
+    this.descriptionData = {
+      name: this.receipeListData[index].name,
+      description: this.receipeListData[index].description,
+      img: this.receipeListData[index].img,
+    };
   }
 }

@@ -1,20 +1,23 @@
-<div id="receipe">
-    <div id="receipeList" (click)="onClickReceipeList()">
-        <div>
-            <p><b>Test Header</b></p>
-            <p><i>Test Description</i></p>
-        </div>
-        <div >
-            <img id="imgDiv" src="../../../assets/w0714a16207251033667-thumb.jpg" alt="receipe">
+<div id="receipe" >
+    <div id="receipeListDiv">
+        <div id="receipeList" (click)="onClickReceipeList(i)" *ngFor="let receipeData of receipeListData;let i=index">
+            <div>
+                <p><b>{{receipeData.name}}</b></p>
+                <p><i>{{receipeData.description}}</i></p>
+            </div>
+            <div >
+                <img id="imgDiv" [src]="receipeData.img" alt="receipe">
+            </div>
         </div>
     </div>
+
     <div id="receipeDescription" *ngIf="hideShow.showDescription">
         <div id="descriptionImg">
-            <img src="../../../assets/w0714a16207251033667-thumb.jpg" alt="receipe">
+            <img id='descriptionImg' [src]="descriptionData.img" alt="receipe">
         </div>
         <div id="descriptionDetails">
-            <p>Test Header</p>
-            <p>Test Description</p>
+            <p>{{descriptionData.name}}</p>
+            <p>{{descriptionData.description}}</p>
         </div>
     </div>
 </div>
